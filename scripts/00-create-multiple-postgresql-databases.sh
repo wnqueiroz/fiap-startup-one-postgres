@@ -3,8 +3,6 @@
 set -e
 set -u
 
-POSTGRES_MULTIPLE_DATABASES=ms_company,ms_user,ms_appointment
-
 function create_user_and_database() {
     local database=$1
     echo "Creating user and database '$database'"
